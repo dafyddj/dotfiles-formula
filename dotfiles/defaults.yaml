@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 # vim: ft=yaml
 ---
-TEMPLATE:
+dotfiles:
   pkg:
-    name: TEMPLATE
+    name: dotfiles
   rootgroup: root
-  config: '/etc/TEMPLATE'
+  config: '/etc/dotfiles'
   service:
-    name: TEMPLATE
+    name: dotfiles
   subcomponent:
-    config: '/etc/TEMPLATE-subcomponent-formula.conf'
+    config: '/etc/dotfiles-subcomponent-formula.conf'
   # Just here for testing
   added_in_defaults: defaults_value
   winner: defaults

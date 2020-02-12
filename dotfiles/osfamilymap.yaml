@@ -12,23 +12,23 @@
 ---
 Debian:
   pkg:
-    name: TEMPLATE-debian
-  config: /etc/TEMPLATE.d/custom.conf
+    name: dotfiles-debian
+  config: /etc/dotfiles.d/custom.conf
 
 RedHat:
   pkg:
-    name: TEMPLATE-redhat
-  config: /etc/TEMPLATE.conf
+    name: dotfiles-redhat
+  config: /etc/dotfiles.conf
 
 Suse:
   pkg:
-    name: TEMPLATE-suse
+    name: dotfiles-suse
 
 Gentoo: {}
 
 Arch:
   pkg:
-    name: TEMPLATE-arch
+    name: dotfiles-arch
   service:
     name: service-arch
 
