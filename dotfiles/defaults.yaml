@@ -2,12 +2,18 @@
 # vim: ft=yaml
 ---
 dotfiles:
+  user: kitchen
+  group: kitchen
   pkg:
     name: dotfiles
   rootgroup: root
   config: '/etc/dotfiles'
   service:
     name: dotfiles
+  git:
+    config: '/home/kitchen/.config/git/config'
+    email: you@example.com
+    name: Your Name
   subcomponent:
     config: '/etc/dotfiles-subcomponent-formula.conf'
   # Just here for testing

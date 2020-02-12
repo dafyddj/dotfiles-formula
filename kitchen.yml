@@ -162,7 +162,7 @@ suites:
       state_top:
         base:
           '*':
-            - dotfiles
+            - dotfiles.git
       pillars:
         top.sls:
           base:
@@ -175,6 +175,8 @@ suites:
     verifier:
       inspec_tests:
         - path: test/integration/default
+      controls:
+        - dotfiles-git-config
   - name: centos6
     includes:
       - centos-6-2017-7-py2
