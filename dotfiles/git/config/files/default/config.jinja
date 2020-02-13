@@ -1,0 +1,11 @@
+[alias]
+# Taken from https://everythingsysadmin.com/2016/05/10-git-aliases.html
+br = branch
+ci = commit
+co = checkout
+st = status
+lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+[user]
+email = {{ dotfiles.git.email }}
+name = {{ dotfiles.git.name }}
