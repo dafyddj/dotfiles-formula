@@ -18,6 +18,9 @@ services:
 ## Script to run for the test stage
 script:
   - bin/kitchen verify "${INSTANCE}"
+  - KITCHEN_LOCAL_YAML=kitchen.clean.yml bin/kitchen converge "${INSTANCE}"
+  - KITCHEN_LOCAL_YAML=kitchen.clean.yml bin/kitchen verify "${INSTANCE}"
+
 
 ## Stages and jobs matrix
 stages:

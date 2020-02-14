@@ -3,6 +3,7 @@
 ---
 name: default
 title: dotfiles formula
+version: 1.0.0
 maintainer: SaltStack Formulas
 license: Apache-2.0
 summary: Verify that the dotfiles formula is setup and configured correctly

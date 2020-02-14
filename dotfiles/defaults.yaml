@@ -4,6 +4,9 @@
 dotfiles:
   user: kitchen
   group: kitchen
+  home_dir: '/home'
+  mode: 644
+  dir_mode: 755
   pkg:
     name: dotfiles
   rootgroup: root
@@ -14,6 +17,9 @@ dotfiles:
     config: '/home/kitchen/.config/git/config'
     email: you@example.com
     name: Your Name
+  shellrc:
+    config_dir: '.shellrc'
+    vagrant_home: '$HOME/.vagrant.d'
   subcomponent:
     config: '/etc/dotfiles-subcomponent-formula.conf'
   # Just here for testing
