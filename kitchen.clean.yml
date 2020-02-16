@@ -8,8 +8,7 @@ suites:
       state_top:
         base:
           '*':
-            - dotfiles.git.clean
-            - dotfiles.shellrc.clean
+            - dotfiles.clean
       pillars:
         top.sls:
           base:
