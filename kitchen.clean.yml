@@ -23,4 +23,5 @@ suites:
       inspec_tests:
         - path: test/integration/default
       controls:
+        - dotfiles-git-clean
         - dotfiles-shellrc-clean
