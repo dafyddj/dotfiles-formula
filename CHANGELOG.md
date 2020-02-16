@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.1](https://github.com/dafyddj/dotfiles-formula/compare/v1.1.0...v1.1.1) (2020-02-16)
+
+
+### Bug Fixes
+
+* **clean:** `dotfiles.clean` cleans up Git and Shellrc correctly ([5e7ab4c](https://github.com/dafyddj/dotfiles-formula/commit/5e7ab4c093e4db9aa6d02740781c7c131d48eb3d))
+
+
+### Tests
+
+* **git:** add test for cleaning Git configuration file ([7e13355](https://github.com/dafyddj/dotfiles-formula/commit/7e133558ee817bc554686dc10f1c491962adef30))
+
 # [1.1.0](https://github.com/dafyddj/dotfiles-formula/compare/v1.0.0...v1.1.0) (2020-02-16)
 
 
