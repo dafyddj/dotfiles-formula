@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.2.0](https://github.com/dafyddj/dotfiles-formula/compare/v1.1.1...v1.2.0) (2020-02-16)
+
+
+### Features
+
+* **zsh:** enable Completion using compinit ([738c465](https://github.com/dafyddj/dotfiles-formula/commit/738c465560c3c6ab3f09a81b82cde02b0ee04cd1))
+
 ## [1.1.1](https://github.com/dafyddj/dotfiles-formula/compare/v1.1.0...v1.1.1) (2020-02-16)
 
 
