@@ -2,6 +2,15 @@
 Changelog
 =========
 
+`1.1.0 <https://github.com/dafyddj/dotfiles-formula/compare/v1.0.0...v1.1.0>`_ (2020-02-16)
+-----------------------------------------------------------------------------------------------
+
+Features
+^^^^^^^^
+
+
+* **shellrc:** add configuration for multiple shell types (\ `f4b7784 <https://github.com/dafyddj/dotfiles-formula/commit/f4b77840f66730dd504213d7aa0cd9fed02ebaff>`_\ )
+
 1.0.0 (2020-02-13)
 ------------------
 
