@@ -2,6 +2,21 @@
 Changelog
 =========
 
+`1.3.0 <https://github.com/dafyddj/dotfiles-formula/compare/v1.2.0...v1.3.0>`_ (2020-02-18)
+-----------------------------------------------------------------------------------------------
+
+Code Refactoring
+^^^^^^^^^^^^^^^^
+
+
+* **chef:** ``shellcheck`` SC2086: double quote (\ `9a07fc3 <https://github.com/dafyddj/dotfiles-formula/commit/9a07fc3f9bf2847955b58370d63ed8bb0d36f6c7>`_\ )
+
+Features
+^^^^^^^^
+
+
+* **chef:** configure shell to use ChefDK as primary Ruby (\ `58b45ba <https://github.com/dafyddj/dotfiles-formula/commit/58b45ba64cfe77cbca435d316ec48199dfeb25f6>`_\ )
+
 `1.2.0 <https://github.com/dafyddj/dotfiles-formula/compare/v1.1.1...v1.2.0>`_ (2020-02-16)
 -----------------------------------------------------------------------------------------------
 
