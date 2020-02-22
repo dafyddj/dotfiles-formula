@@ -44,4 +44,6 @@ Solaris: {}
 
 Windows: {}
 
-MacOS: {}
+MacOS:
+  git:
+    prompt_path: '/usr/local/etc/bash_completion.d/git-prompt.sh'

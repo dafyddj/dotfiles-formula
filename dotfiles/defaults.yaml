@@ -17,6 +17,7 @@ dotfiles:
     config: '/home/kitchen/.config/git/config'
     email: you@example.com
     name: Your Name
+    prompt_path: '/usr/lib/git-core/git-sh-prompt'
   shellrc:
     config_dir: '.shellrc'
     vagrant_home: '$HOME/.vagrant.d'
