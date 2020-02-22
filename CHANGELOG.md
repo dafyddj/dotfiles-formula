@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.4.0](https://github.com/dafyddj/dotfiles-formula/compare/v1.3.0...v1.4.0) (2020-02-22)
+
+
+### Features
+
+* **zsh:** set up a colourful prompt showing basic Git status ([a3d5288](https://github.com/dafyddj/dotfiles-formula/commit/a3d528804e6e98b37f649e3a4531a0924a1df85e))
+
 # [1.3.0](https://github.com/dafyddj/dotfiles-formula/compare/v1.2.0...v1.3.0) (2020-02-18)
 
 
