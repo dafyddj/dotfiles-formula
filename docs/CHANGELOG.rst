@@ -2,6 +2,15 @@
 Changelog
 =========
 
+`1.5.0 <https://github.com/dafyddj/dotfiles-formula/compare/v1.4.0...v1.5.0>`_ (2020-02-25)
+-----------------------------------------------------------------------------------------------
+
+Features
+^^^^^^^^
+
+
+* **zsh:** enable shell history and configure various options (\ `d6fe16c <https://github.com/dafyddj/dotfiles-formula/commit/d6fe16cecf3d9ec5bb1b03baddd96291d27e6064>`_\ )
+
 `1.4.0 <https://github.com/dafyddj/dotfiles-formula/compare/v1.3.0...v1.4.0>`_ (2020-02-22)
 -----------------------------------------------------------------------------------------------
 
