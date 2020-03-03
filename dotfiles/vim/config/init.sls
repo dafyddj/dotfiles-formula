@@ -2,6 +2,4 @@
 # vim: ft=sls
 
 include:
-  - .git
-  - .shellrc
-  - .vim
+  - .file

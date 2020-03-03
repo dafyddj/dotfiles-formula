@@ -23,6 +23,8 @@ dotfiles:
     vagrant_home: '$HOME/.vagrant.d'
   subcomponent:
     config: '/etc/dotfiles-subcomponent-formula.conf'
+  vim:
+    config: '.vimrc'
   # Just here for testing
   added_in_defaults: defaults_value
   winner: defaults

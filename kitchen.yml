@@ -178,6 +178,7 @@ suites:
       controls:
         - dotfiles-git-config
         - dotfiles-shellrc-setup
+        - dotfiles-vim-config
   - name: centos6
     includes:
       - centos-6-2017-7-py2

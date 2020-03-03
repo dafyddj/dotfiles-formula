@@ -24,3 +24,4 @@ suites:
       controls:
         - dotfiles-git-clean
         - dotfiles-shellrc-clean
+        - dotfiles-vim-clean

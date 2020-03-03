@@ -4,3 +4,4 @@
 include:
   - .git.clean
   - .shellrc.clean
+  - .vim.clean
