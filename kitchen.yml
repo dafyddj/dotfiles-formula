@@ -162,8 +162,7 @@ suites:
       state_top:
         base:
           '*':
-            - dotfiles.git
-            - dotfiles.shellrc
+            - dotfiles
       pillars:
         top.sls:
           base:

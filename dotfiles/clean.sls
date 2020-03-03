@@ -4,6 +4,3 @@
 include:
   - .git.clean
   - .shellrc.clean
-#  - .service.clean
-#  - .config.clean
-#  - .package.clean
