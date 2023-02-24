@@ -1,0 +1,16 @@
+name: Main
+on:
+  pull_request:
+  push:
+
+jobs:
+  test:
+    name: Test `show_sls`
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+    - name: Run test
+      run: |
+        pip install salt
+        salt-call cp.list_states --output newline_values_only | xargs -L 1 salt-call state.show_sls --output yaml
