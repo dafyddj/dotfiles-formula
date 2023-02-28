@@ -10,7 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
+      with:
+        cache: pip
     - name: Run test
       run: |
-        pip install salt
+        pip install -r requirements.txt
         salt-call cp.list_states --output newline_values_only | xargs -L 1 salt-call state.show_sls --output yaml
