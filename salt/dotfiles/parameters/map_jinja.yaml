@@ -1,0 +1,15 @@
+---
+values:
+  sources:
+    # default values
+    - "Y:G@osarch"
+    - "Y:G@os_family"
+    - "Y:G@os"
+    - "Y:G@osfinger"
+
+    # Use `username` of Salt process
+    - "Y:G@username"
+
+    # default values
+    - "C@{{ tplroot }}"
+    - "Y:G@id"
