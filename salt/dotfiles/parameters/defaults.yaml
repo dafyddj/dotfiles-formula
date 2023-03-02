@@ -12,7 +12,7 @@ values:
   service:
     name: dotfiles
   git:
-    config: /home/kitchen/.config/git/config
+    config: .gitconfig
     email: you@example.com
     name: Your Name
     prompt_path: /usr/lib/git-core/git-sh-prompt

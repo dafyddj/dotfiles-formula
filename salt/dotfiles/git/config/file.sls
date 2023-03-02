@@ -9,7 +9,7 @@
 
 dotfiles-git-config-file-file-managed:
   file.managed:
-    - name: {{ dotfiles.git.config }}
+    - name: {{ dotfiles.home_dir }}/{{ dotfiles.git.config }}
     - source: {{ files_switch(['config','config.jinja'],
                               lookup='dotfiles-git-config-file-file-managed',
                               use_subpath=True
