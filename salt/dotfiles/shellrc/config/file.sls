@@ -6,11 +6,9 @@
 {%- from tplroot ~ "/map.jinja" import mapdata as dotfiles with context %}
 {%- from tplroot ~ "/libtofs.jinja" import files_switch with context %}
 
-{%- set home_dir = dotfiles.home_dir ~ '/' ~ dotfiles.user %}
-
 dotfiles-shellrc-config-file-file-recurse:
   file.recurse:
-    - name: {{ home_dir ~ '/' ~ dotfiles.shellrc.config_dir }}
+    - name: {{ dotfiles.home_dir ~ '/' ~ dotfiles.shellrc.config_dir }}
     - source: salt://dotfiles/shellrc/config/files
     - file_mode: {{ dotfiles.mode }}
     - dir_mode: {{ dotfiles.dir_mode }}
@@ -23,7 +21,7 @@ dotfiles-shellrc-config-file-file-recurse:
 {%- for symlink in ['bashrc', 'bash_profile', 'zshrc', 'zlogin'] %}
 dotfiles-shellrc-config-file-file-symlink-{{ symlink }}:
   file.symlink:
-    - name: {{ home_dir ~ '/.' ~ symlink }}
+    - name: {{ dotfiles.home_dir ~ '/.' ~ symlink }}
     - target: .shellrc/{{ symlink }}
     - user: {{ dotfiles.user }}
     - group: {{ dotfiles.group }}
