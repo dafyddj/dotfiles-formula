@@ -3,7 +3,7 @@
 control 'dotfiles-git-config' do
   title 'Git configuration should match desired lines'
 
-  describe file('/home/kitchen/.config/git/config') do
+  describe file('/home/kitchen/.gitconfig') do
     it { should be_file }
     it { should be_owned_by 'kitchen' }
     it { should be_grouped_into 'kitchen' }

@@ -274,7 +274,20 @@ suites:
       state_top:
         base:
           '*':
-            - dotfiles
+            - dotfiles.git
+            - dotfiles.shellrc
+      pillars:
+        top.sls:
+          base:
+            '*':
+              - dotfiles
+              - define_roles
+      pillars_from_files:
+        dotfiles.sls: pillar.example
+        define_roles.sls: test/salt/pillar/define_roles.sls
     verifier:
       inspec_tests:
         - path: test/integration/default
+      controls:
+        - dotfiles-git-config
+        - dotfiles-shellrc-setup
