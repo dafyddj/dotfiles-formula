@@ -108,7 +108,7 @@ jobs:
       - uses: codfish/semantic-release-action@b621d34fabe0940f031e89b6ebfea28322892a10 # v3.5.0
         with:
           branches: '"ma(in|ster)"'
-          dry-run: true
+          dry-run: false
           plugins: |
             [
               [

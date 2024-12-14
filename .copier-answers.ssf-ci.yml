@@ -2,4 +2,4 @@
 _commit: v1.1.0
 _src_path: https://github.com/dafyddj/copier-template-formula
 formula_name: dotfiles
-release_using_gha: false
+release_using_gha: true
