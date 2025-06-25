@@ -2,4 +2,4 @@
 values:
   home_rootdir: /Users
   git:
-    prompt_path: /usr/local/etc/bash_completion.d/git-prompt.sh
+    prompt_path: $(brew --prefix)/opt/git/etc/bash_completion.d/git-prompt.sh
