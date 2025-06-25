@@ -1,17 +1,7 @@
-#
-# Local config for Salt Master/Minion
-#
-
-root_dir: .salt
 file_client: local
-
-fileserver_backend:
-  - roots
+root_dir: .salt
 
 file_roots:
   base:
-    - salt
-
-pillar_roots:
-  base:
-    - pillar
+    - .
+    - .salt/srv

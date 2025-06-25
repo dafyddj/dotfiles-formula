@@ -1,6 +1,2 @@
-#
-# Local config for Salt CLI tools
-#
-
 salt-call:
   config_dir: .salt/etc
