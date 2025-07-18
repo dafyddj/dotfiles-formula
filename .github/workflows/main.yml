@@ -121,12 +121,6 @@ jobs:
             Test / Kitchen (ubuntu-2004-master)
           ignore_pattern: ^GitLab CI
           token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Run `maintainer`
-        env:
-          MAINTAINER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: >
-          maintainer contributor
-          --ignore-contributors semantic-release-bot,renovate[bot]
       - name: Run `semantic-release`
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
