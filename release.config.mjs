@@ -31,17 +31,6 @@ export default {
       releaseRules
     }],
     '@semantic-release/release-notes-generator',
-    ['@semantic-release/changelog', {
-      changelogFile: 'CHANGELOG.md',
-      changelogTitle: '# Changelog'
-    }],
-    ['@semantic-release/exec', {
-      // eslint-disable-next-line no-template-curly-in-string
-      prepareCmd: 'sh ./pre-commit_semantic-release.sh ${nextRelease.version}'
-    }],
-    ['@semantic-release/git', {
-      assets: ['*.md', 'docs/*.rst', 'FORMULA']
-    }],
     '@semantic-release/github'
   ],
   preset: 'angular',
