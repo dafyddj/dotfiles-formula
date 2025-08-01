@@ -25,7 +25,7 @@ jobs:
     name: Lint / `pre-commit`
     needs: should-run
     if: fromJSON(needs.should-run.outputs.should-run)
-    container: techneg/ci-pre-commit:v2.4.30@sha256:0d36fff14826b86f7248742a0e8f1d4b4d2341ebb9442dfe1d9c2491b63f3209
+    container: techneg/ci-pre-commit:v2.4.32@sha256:fa9eef397583add95f4fccefa6ecbbf7a3845d6168f07393da7bc619696b246b
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -89,7 +89,7 @@ jobs:
         with:
           detached: true
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - uses: ruby/setup-ruby@a4effe49ee8ee5b8b5091268c473a4628afb5651 # v1.245.0
+      - uses: ruby/setup-ruby@bb6434c747fa7022e12fa1cae2a0951fcffcff26 # v1.253.0
         with:
           bundler-cache: true
           ruby-version: '3.1'
@@ -102,11 +102,19 @@ jobs:
       issues: write
       pull-requests: write
       checks: read
+<<<<<<< before updating
     container: techneg/ci-semantic-release:v1.0.0
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - run: |
+=======
+    container: techneg/ci-semantic-release:v1.1.0
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - run: |  # Needed due to bug actions/checkout#2031
+>>>>>>> after updating
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       # yamllint disable-line rule:line-length
@@ -124,6 +132,12 @@ jobs:
       - name: Run `semantic-release`
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+<<<<<<< before updating
         run: |
           semantic-release
+=======
+          MAINTAINER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          semantic-release --dry-run
+>>>>>>> after updating
       - run: echo "::notice ::Workflow success!"
