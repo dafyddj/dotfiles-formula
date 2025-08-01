@@ -1,13 +1,15 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v2.5.0
+_commit: v2.7.0
 _src_path: https://github.com/dafyddj/copier-template-formula
 failure_permitted_ignored: []
 failure_permitted_patterns: []
 formula_name: dotfiles
+release_style: basic
 release_using_gha: true
 renovate_extend_presets:
 - github>saltstack-formulas/.github
 - github>saltstack-formulas/.github:copier
+- github>saltstack-formulas/.github:weekly
 renovate_ignore_presets: []
 supported_oses:
 - AlmaLinux OS
