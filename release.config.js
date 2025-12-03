@@ -1,6 +1,3 @@
-<<<<<<< before updating
-module.exports = {
-=======
 // Commit types appear in the changelog in this order
 const commitTypes = [
   { type: 'feat', section: 'Features' },
@@ -30,7 +27,6 @@ const releaseRules = [
 ]
 
 const config = {
->>>>>>> after updating
   plugins: [
     ['@semantic-release/commit-analyzer', { releaseRules }],
     '@semantic-release/release-notes-generator',
