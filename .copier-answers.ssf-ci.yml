@@ -21,4 +21,4 @@ supported_oses:
 - Oracle Linux
 - Rocky Linux
 - Ubuntu
-using_probot_settings: false
+using_probot_settings: true
